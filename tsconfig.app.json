@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", 
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext", 
+    "skipLibCheck": true, 
+    "moduleResolution": "bundler", 
+    "allowImportingTsExtensions": true, 
+    "isolatedModules": true, 
+    "moduleDetection": "force", 
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true, 
+    "noUnusedLocals": true, 
+    "noUnusedParameters": true, 
+    "noFallthroughCasesInSwitch": true,
+
+    /* Enhancements */
+    "esModuleInterop": true, 
+    "resolveJsonModule": true, 
+    "skipDefaultLibCheck": true, 
+
+    /* Type definitions */
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "types": ["node", "jest"]  // Add any global type packages you need, like node or jest.
+  },
+  "include": [
+    "src", 
+    "src/**/*.d.ts"  // Include type definitions from your project directory.
+  ],
+  "exclude": ["node_modules", "build"] // Exclude directories that you don't want to type-check
+}
